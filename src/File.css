@@ -1,0 +1,47 @@
+/* Conteneur principal du dossier */
+.folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Icône du dossier */
+  .folder-icon {
+    width: 64px;
+    height: 64px;
+    background-image: url('assets/folder.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5px;
+    transition: filter 0.2s;
+  }
+  
+  /* Nom du dossier */
+  .folder-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #f1f5f9;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 90px;
+  }
+  
+  /* Effets au survol */
+  .folder:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .folder:hover .folder-icon {
+    filter: brightness(1.2);
+  }
+  
